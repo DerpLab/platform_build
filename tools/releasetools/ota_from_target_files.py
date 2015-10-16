@@ -1016,6 +1016,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.ShowProgress(0.02, 10)
     script.RunBackup("restore", sysmount)
 
+  script.Print(" ")
+  script.Print("Flashing boot image..")
   script.ShowProgress(0.05, 5)
   script.WriteRawImage("/boot", "boot.img")
 
