@@ -23,6 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 # /product packages
 PRODUCT_PACKAGES += \
     Camera2 \
+    Launcher3QuickStep \
     OneTimeInitializer \
     Provision \
     Settings \
@@ -31,6 +32,19 @@ PRODUCT_PACKAGES += \
     SystemUI \
     WallpaperCropper \
     frameworks-base-overlays
+
+ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+PRODUCT_PACKAGES += \
+    Browser2 \
+    Calendar \
+    Contacts \
+    DeskClock \
+    Email \
+    Gallery2 \
+    LatinIME \
+    Music \
+    QuickSearchBox
+endif
 
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug

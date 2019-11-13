@@ -32,6 +32,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 endif
 
+ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+PRODUCT_PACKAGES += \
+    WallpaperPicker
+endif
+
 ifeq ($(AOSIP_BUILD),)
 PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 endif
