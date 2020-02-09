@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     Contacts \
     DeskClock \
     Email \
+    ExactCalculator \
     Gallery2 \
     LatinIME \
     Music \
