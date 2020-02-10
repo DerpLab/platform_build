@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     WallpaperCropper \
     frameworks-base-overlays
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     Browser2 \
     Calendar \

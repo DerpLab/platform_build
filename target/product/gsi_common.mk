@@ -82,7 +82,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 PRODUCT_PACKAGES += \
     WAPPushManager
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     messaging \
     WallpaperPicker

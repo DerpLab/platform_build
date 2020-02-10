@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     CarrierConfig \
     EmergencyInfo
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
      Dialer
 endif
