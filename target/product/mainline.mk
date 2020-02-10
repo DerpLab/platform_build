@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 endif
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     WallpaperPicker
 endif

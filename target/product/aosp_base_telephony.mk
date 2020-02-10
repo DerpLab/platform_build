@@ -15,7 +15,7 @@
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     messaging
 endif
