@@ -30,8 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Zen.ogg \
     ro.com.android.dataroaming=true \
 
-endif
-
 ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     WallpaperPicker
