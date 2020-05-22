@@ -1910,8 +1910,6 @@ define build-recoveryramdisk
 endef
 else
 define build-recoveryramdisk
-  @echo -e ${CL_GRN}"----- Generating Changelog ------"${CL_RST}
-  $(hide) ./vendor/aosip/tools/changelog.sh
   $(hide) mkdir -p $(TARGET_RECOVERY_OUT)
   $(hide) mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/sdcard $(TARGET_RECOVERY_ROOT_OUT)/tmp
   # Copying baseline ramdisk...
@@ -2341,6 +2339,8 @@ endif
 
 # $(1): output file
 define build-systemimage-target
+  @echo -e ${CL_GRN}"----- Generating Changelog ------"${CL_RST}
+  $(hide) ./vendor/aosip/tools/changelog.sh
   @echo "Target system fs image: $(1)"
   $(call create-system-vendor-symlink)
   $(call create-system-product-symlink)
