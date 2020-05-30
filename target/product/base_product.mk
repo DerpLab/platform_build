@@ -20,3 +20,10 @@ PRODUCT_PACKAGES += \
     ModuleMetadata \
     product_compatibility_matrix.xml \
     product_manifest.xml \
+
+# Some apps that should be in VANILLA builds
+ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
+PRODUCT_PACKAGES += \
+    Etar \
+    DeskClock
+endif
