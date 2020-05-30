@@ -44,7 +44,9 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LatinIME \
     Music \
-    QuickSearchBox
+    QuickSearchBox \
+	Etar \
+    DeskClock
 endif
 
 PRODUCT_PACKAGES_DEBUG += \
