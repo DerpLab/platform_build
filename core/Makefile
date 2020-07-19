@@ -1901,6 +1901,8 @@ RECOVERYIMAGE_ID_FILE := $(PRODUCT_OUT)/recovery.id
 
 ifneq ($(TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO),)
 define build-recoveryramdisk
+  @echo -e ${CL_GRN}"----- Generating Changelog ------"${CL_RST}
+  $(hide) ./vendor/aosip/tools/changelog.sh
   @echo -e ${CL_CYN}"----- Extracting recovery ramdisk ------"${CL_RST}
   $(hide) mkdir -p $(TARGET_RECOVERY_OUT)
   $(hide) mkdir -p $(TARGET_RECOVERY_ROOT_OUT)
