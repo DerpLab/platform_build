@@ -36,14 +36,11 @@ PRODUCT_PACKAGES += \
 ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
     Browser2 \
-    Calendar \
     Contacts \
     DeskClock \
-    Email \
     ExactCalculator \
     Gallery2 \
     LatinIME \
-    Music \
     QuickSearchBox \
 	Etar \
     DeskClock
